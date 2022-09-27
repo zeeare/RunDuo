@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="acts"
+            type="com.example.runduo.ChattingActs" />
+        <variable
+            name="otherImg"
+            type="String" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/msgStyle"
+            layout="@layout/chat_style"
+            bind:acts="@{acts}"
+            bind:otherImg="@{otherImg}" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewingMSG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/dataOFmsg"
+            android:layout_below="@+id/msgStyle"
+            android:animateLayoutChanges="false" />
+
+        <LinearLayout
+
+            android:id="@+id/dataOFmsg"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/layoutMsg"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1.8"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/textingMsg"
+                    android:padding="8dp"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write message.."
+                    android:layout_marginEnd="3dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginStart="3dp"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/sendMsg"
+                android:layout_width="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center|bottom"
+                android:layout_weight=".2"
+                android:src="@drawable/ic_baseline_send_24" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

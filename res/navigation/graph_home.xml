@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graph_home.xml"
+    app:startDestination="@id/runningFrags">
+
+    <action android:id="@+id/global_trackingFrag"
+        app:destination="@id/tracksFrags"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/runningFrags"
+        android:name="com.example.runduo.frags.RunningFrags"
+        android:label="RunningFrags" >
+        <action
+            android:id="@+id/action_runningFrags_to_tracksFrags"
+            app:destination="@id/tracksFrags" />
+    </fragment>
+    <fragment
+        android:id="@+id/tracksFrags"
+        android:name="com.example.runduo.frags.TracksFrags"
+        android:label="TracksFrags" >
+        <action
+            android:id="@+id/action_tracksFrags_to_runningFrags"
+            app:destination="@id/runningFrags" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFrags"
+        android:name="com.example.runduo.frags.StatsFrags"
+        android:label="StatsFrags" />
+    <fragment
+        android:id="@+id/setsFrags"
+        android:name="com.example.runduo.frags.SetsFrags"
+        android:label="SetsFrags" />
+    <fragment
+        android:id="@+id/chattingFrags"
+        android:name="com.example.runduo.frags.ChattingFrags"
+        android:label="ChattingFrags" />
+    <fragment
+        android:id="@+id/loadUsersFrags"
+        android:name="com.example.runduo.frags.LoadUsersFrags"
+        android:label="LoadUsersFrags" />
+</navigation>
