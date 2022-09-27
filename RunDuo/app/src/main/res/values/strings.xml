@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RunDuo</string>
+    <string name="invalid_name">Enter Valid Name</string>
+    <string name="invalid_email">Enter Valid Email</string>
+    <string name="invalid_pw">Enter 6 Digit Password</string>
+    <string name="invalid_confirmPW">Password Does Not Match</string>
+    <string name="google_maps_key">AIzaSyAbq5aA46B95zXuIsrrxPNhup7LohBM2x8</string>
+    <string-array name="sorting_choice">
+        <item>Date</item>
+        <item>Distance</item>
+        <item>Average Speed</item>
+        <item>Running Time</item>
+        <item>Calories Burned</item>
+    </string-array>
+
+</resources>

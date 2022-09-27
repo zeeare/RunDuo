@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/runningFrags"
+        android:icon="@drawable/run_icon"
+        android:title="Runs" />
+
+    <item android:id="@+id/statsFrags"
+        android:icon="@drawable/stats_icon"
+        android:title="Stats" />
+
+    <item android:id="@+id/setsFrags"
+        android:icon="@drawable/gear_icon"
+        android:title="Profile" />
+
+    <item android:id="@+id/chattingFrags"
+        android:icon="@drawable/icon_chats"
+        android:title="Chats"
+        />
+
+    <item android:id="@+id/loadUsersFrags"
+        android:icon="@drawable/icon_users"
+        android:title="Users"
+        />
+
+</menu>

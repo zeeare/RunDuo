@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "131184647777",
+    "project_id": "runduo-82d65",
+    "storage_bucket": "runduo-82d65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131184647777:android:92cf2abad81ef11f5a1420",
+        "android_client_info": {
+          "package_name": "com.example.runduo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131184647777-h7n58n7paicradpfdc5cfs9f9huuo005.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.runduo",
+            "certificate_hash": "b7fcc3c72accd6472564b577788a7f492f634974"
+          }
+        },
+        {
+          "client_id": "131184647777-9244aka1ucpqnrb8j5tbb1k7eqf63v24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDUetWlEFWFNNkXGYRoBcVPpLx5wuQuv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131184647777-9244aka1ucpqnrb8j5tbb1k7eqf63v24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

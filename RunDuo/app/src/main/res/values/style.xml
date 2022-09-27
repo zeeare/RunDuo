@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+    <item name="alertDialogTheme">@style/Alertlog</item>
+    </style>
+
+
+<style name="Alertlog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+<item name="buttonBarPositiveButtonStyle">@style/PositiveType</item>
+<item name="buttonBarNegativeButtonStyle">@style/NegativeType</item>
+</style>
+
+<style name="NegativeType" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+<item name="android:textColor">@color/colorAccent</item>
+</style>
+
+<style name="PositiveType" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+<item name="android:textColor">@color/colorAccent</item>
+</style>
+</resources>

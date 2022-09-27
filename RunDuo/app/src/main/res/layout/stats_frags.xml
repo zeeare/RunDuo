@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Distance"
+        app:layout_constraintBottom_toTopOf="@+id/statsSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/statsDistanceData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/statsDistanceData"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsDistanceData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0km"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/statsDistance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LinesG2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsTiming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Timing"
+
+        app:layout_constraintBottom_toTopOf="@id/statsCalories"
+        app:layout_constraintEnd_toEndOf="@+id/statsTimingData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/statsTimingData"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsTimingData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/statsTiming"
+        app:layout_constraintEnd_toStartOf="@+id/LinesG2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories Burned"
+        app:layout_constraintBottom_toTopOf="@+id/LinesG"
+        app:layout_constraintEnd_toEndOf="@+id/statsCaloriesData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/statsCaloriesData"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsCaloriesData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0kcal"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/statsCalories"
+        app:layout_constraintEnd_toStartOf="@+id/LinesG2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Speed"
+        app:layout_constraintBottom_toTopOf="@+id/LinesG"
+        app:layout_constraintEnd_toEndOf="@+id/statsSpeedData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/statsSpeedData"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/statsSpeedData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0km/h"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/statsSpeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LinesG2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LinesG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LinesG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chartBAR"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statsSpeed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
