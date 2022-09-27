@@ -1,8 +1,8 @@
 ![](ScreenShots/Logo.PNG)
 
 # RunDuo
-This is a Final Year Project in android mobile that uses peer coaching and gamification to encourage users to go for running. <br />
-It is an application tracks user running start time as well as route with google maps, it also enable users to communicate with another user using the chatting feature. <br />
+This is a University Final Year Project in android mobile application that uses peer coaching and gamification to encourage users to go run more often. <br />
+It is an application tracks user running start time as well as route with google maps. Additionally, it also enable users to communicate with one another via the chatting feature. <br />
 
 ## 📚 Functions
 1. User account creation
